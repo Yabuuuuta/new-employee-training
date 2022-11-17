@@ -7,7 +7,6 @@ html {
 }
 
 body {
-  max-width: 1920px;
   margin: 0 auto;
   width: 100%;
   height: inherit;
@@ -84,6 +83,9 @@ footer{
   /* ----------
   main 
   -------------*/
+  main{
+    height: calc(100vh - 220px);
+  }
   aside{
     flex-basis: 240px;
   }
