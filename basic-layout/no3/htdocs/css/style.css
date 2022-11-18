@@ -3,6 +3,7 @@
 html {
   width: 100%;
   height: 100%;
+  font-size: 62.5%;
 }
 
 body {
@@ -13,4 +14,190 @@ body {
   overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #330808;
+  word-break: break-all;
+  font-size: 3.6rem;
 }
+
+/* common ---------------------------------------------*/
+header,section,aside,footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.pc-hide{
+  display: none;
+}
+
+/* pc –-----------------------------------------------*/
+
+/* header */
+header{
+  background-color: #EA4B4B;
+  height: 120px;
+}
+
+/* main */
+main{
+  display: flex;
+}
+.main_wrapper{
+  width: 100%;
+  flex: 1;
+}
+.main_side{
+  width: 320px;
+  background-color: #F0EB6A;
+  flex-shrink: 0;
+}
+.main_bnr{
+  background-color: #F1CBFC;
+}
+
+.main_mv{
+  background-color: #FCE5CB;
+  height: 100vh;
+}
+
+.main_contents{
+  padding: 7.5rem 5rem 10rem;
+}
+.main_contents_1,.main_contents_2{
+  display: flex;
+  gap: 5rem;
+}
+.main_contents_1 section{
+  background-color: #CBDEFC;
+  height: 40rem;
+  width: 100%;
+}
+
+.main_contents_2{
+  margin-top: 7.5rem;
+}
+
+.main_contents_2 section{
+  background-color: #CBFCE0;
+  height: 40rem;
+  width: 100%;
+}
+
+.main_contents_bnr{
+  margin-top: 7.5rem;
+  background: url(../img/bnr.jpg) no-repeat center top;
+  aspect-ratio: 1500/350;
+}
+
+/* footer */
+footer{
+  background-color: #EAB34B;
+  height: 12rem;
+}
+
+/* tab –-----------------------------------------------*/
+@media screen and (max-width: 1023px){
+body{
+  font-size: 2.8rem;
+}
+
+/* header */
+header{
+  height: 10rem;
+}
+
+/* main */
+.main_contents{
+  padding: 5rem 3rem 7.5rem;
+}
+
+.main_side{
+  width: 240px;
+}
+
+.main_contents_1,.main_contents_2{
+  gap: 3rem;
+}
+
+.main_contents_1 section{
+  height: 25rem;
+}
+.main_contents_2{
+  flex-direction: column;
+  margin-top: 5rem;
+}
+.main_contents_2 section{
+  height: 23.5rem;
+}
+
+}
+
+/* sp –-----------------------------------------------*/
+@media screen and (max-width: 767px){
+html{
+  font-size: 2.66vw;
+}
+body{
+  font-size: 2.4rem;
+}
+.pc-hide{
+  display: block;
+}
+
+/* header */
+header{
+  height: 85px;
+}
+  
+/* main */
+main{
+  flex-direction: column;
+}
+.main_side{
+  order: 2;
+  width: 100%;
+  height: 120px;
+}
+.main_wrapper{
+  order: 1;
+}
+.main_contents{
+  padding: 45px 15px 65px;
+}
+.main_contents_1,.main_contents_2{
+  gap: 25px;
+}
+.main_contents_1{
+  flex-direction: column;
+}
+.main_contents_1 section{
+  height: 250 px;
+}
+.main_contents_2{
+  margin-top: 40px;
+  gap: 15px;
+  display: grid;
+  grid-template-areas: 
+    'no1 no2'
+    'no3 no4'
+  ;
+}
+.main_contents_2 section{
+  margin-bottom: 5px;
+  height: 235px;
+}
+
+
+.main_contents_bnr{
+  background: url(../img/bnr-sp.jpg) no-repeat center top;
+  aspect-ratio: 1/1;
+  margin-top: 55px;
+}
+
+/* footer */
+footer{
+  height: 60px;
+}
+
+}
+
