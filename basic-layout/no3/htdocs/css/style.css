@@ -57,7 +57,7 @@ main{
 
 .main_mv{
   background-color: #FCE5CB;
-  height: 100vh;
+  height: calc(100vh - 120px);
 }
 
 .main_contents{
@@ -85,8 +85,11 @@ main{
 
 .main_contents_bnr{
   margin-top: 7.5rem;
-  background: url(../img/bnr.jpg) no-repeat center top;
   aspect-ratio: 1500/350;
+}
+.main_contents_bnr img{
+  width: 100%;
+  height: auto;
 }
 
 /* footer */
@@ -109,6 +112,10 @@ header{
 /* main */
 .main_contents{
   padding: 5rem 3rem 7.5rem;
+}
+
+.main_mv{
+  height: calc(100vh - 100px);
 }
 
 .main_side{
@@ -135,7 +142,8 @@ header{
 /* sp –-----------------------------------------------*/
 @media screen and (max-width: 767px){
 html{
-  font-size: 2.66vw;
+  font-size: 2.56vw;
+  /* 10px / 390px * 100vw = 2.56vw */
 }
 body{
   font-size: 2.4rem;
@@ -152,6 +160,9 @@ header{
 /* main */
 main{
   flex-direction: column;
+}
+.main_mv{
+  height: calc(100vh - 85px);
 }
 .main_side{
   order: 2;
@@ -171,7 +182,7 @@ main{
   flex-direction: column;
 }
 .main_contents_1 section{
-  height: 250 px;
+  height: 250px;
 }
 .main_contents_2{
   margin-top: 40px;
@@ -189,7 +200,6 @@ main{
 
 
 .main_contents_bnr{
-  background: url(../img/bnr-sp.jpg) no-repeat center top;
   aspect-ratio: 1/1;
   margin-top: 55px;
 }
