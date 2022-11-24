@@ -13,4 +13,59 @@ body {
   overflow-wrap: break-word;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #330808;
 }
+
+
+/* pc ----------------------------------------------*/
+/* common */
+.wrapper{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/* header */
+header{
+  height: 120px;
+  background-color: #EA4B4B;
+}
+.main_mv{
+  background-color: #FCE5CB;
+  height: 500px;
+}
+.main_flex{
+  display: flex;
+  gap: 40px;
+  margin-top: 96px;
+}
+.main_contents1{
+  flex-grow: 1;
+  display: grid;
+  gap: 54px 40px;
+  grid-template-areas: 
+  'contents1_1 contents1_1'
+  'contents1_2 contents1_3'
+  'contents1_4 contents1_4'
+  'contents1_5 contents1_5'
+  ;
+}
+.main_contents1 section{
+  background-color: #CBDEFC;
+  height: 352px;
+}
+.main_side{
+  background-color: #F0EB6A;
+  width: 290px;
+}
+
+.main_contents2{
+  display: flex;
+  gap: 40px;
+}
+.main_contents2 section{
+  background-color: #CBFCE0;
+  width: calc(100% - 120px);
+}
+/* tab ----------------------------------------------*/
+/* sp ----------------------------------------------*/
+
+
