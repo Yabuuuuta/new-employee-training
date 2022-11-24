@@ -16,15 +16,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #330808;
   word-break: break-all;
+  text-align: center;
 }
-
-/* common ----------------------------------------------------*/
+/* pc --------------------------------------------------------*/
+/* common */
 .pc-hide{
   display: none;
 }
-
-/* pc --------------------------------------------------------*/
-/* common */
 body{
   font-size: 3.6rem;
 }
@@ -190,6 +188,9 @@ footer{
 /* sp --------------------------------------------------------*/
 @media screen and (max-width: 767px) {
 /* common */
+.pc-hide{
+  display: block;
+}
 .inner_wrap{
   padding: 0 20px;
 }
